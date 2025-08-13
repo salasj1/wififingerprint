@@ -17,7 +17,7 @@ Para configurar el entorno de desarrollo y construir el proyecto, sigue estos pa
     Abre una terminal o Git Bash y ejecuta el siguiente comando para clonar el proyecto en tu máquina local.
 
     ```bash
-    git clone [https://github.com/salasj1/wififingerprint.git](https://github.com/salasj1/wififingerprint.git)
+    git clone https://github.com/salasj1/wififingerprint.git
     ```
 
 2.  **Abrir en Android Studio:**
