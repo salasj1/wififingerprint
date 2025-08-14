@@ -1,4 +1,4 @@
-# WiFi Fingerprint - Un Prototipo para Localización en Interiores en Android
+# WiFi Fingerprint - Un Prototipo en Android para Localización en Interiores
 Este repositorio contiene el código fuente para el proyecto de localización en interiores mediante WiFi Fingerprinting, desarrollado en Android Studio.
 
 ---
