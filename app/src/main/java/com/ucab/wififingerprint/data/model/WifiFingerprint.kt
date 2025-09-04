@@ -1,21 +1,15 @@
 package com.ucab.wififingerprint.data.model
 
 import androidx.room.Embedded
-import androidx.room.Entity
-import androidx.room.PrimaryKey
 import androidx.room.Relation
+import com.ucab.wififingerprint.data.db.LocationEntity
+import com.ucab.wififingerprint.data.db.WifiReadingEntity
 
-@Entity(tableName = "wifi_fingerprints")
 data class WifiFingerprint(
-    @PrimaryKey val locationName: String
-)
-
-// Clase para agrupar una ubicación con sus lecturas
-data class LocationWithReadings(
-    @Embedded val fingerprint: WifiFingerprint,
+    @Embedded val location: LocationEntity,
     @Relation(
-        parentColumn = "locationName",
-        entityColumn = "fingerprintOwnerName"
+        parentColumn = "id", // Primary key of LocationEntity
+        entityColumn = "locationId" // Foreign key in WifiReadingEntity
     )
-    val readings: List<WifiReading>
+    val readings: List<WifiReadingEntity>
 )

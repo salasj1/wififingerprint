@@ -16,7 +16,7 @@ data class LocationEntity(
 @Entity(tableName = "fingerprints")
 data class FingerprintEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
-    val locationName: String, // Foreign key to LocationEntity
+    val locationName: String, // Foreign key to LocationEntity.kt
     val bssid: String,
     val rssi: Int
 )
